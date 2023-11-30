@@ -33,42 +33,54 @@ public class LabShooter extends GameApplication {
     protected void initInput(){
         Input input = FXGL.getInput();
 
-        input.addAction(new UserAction("Right") {
+        input.addAction(new UserAction("Rotate Right") {
             @Override
             protected void onAction() {
-                player.rotateBy(1);
+                if(player.getRotation() > 180){
+                    player.setRotation(-180);
+                    player.rotateBy(1);
+                } else {
+                    player.rotateBy(1);
+                }
                 System.out.println(player.getRotation());
             }
         }, KeyCode.D);
-        input.addAction(new UserAction("Left") {
+        input.addAction(new UserAction("Rotate Left") {
             @Override
             protected void onAction() {
-                player.rotateBy(-1);
+                if(player.getRotation() < -180){
+                    player.setRotation(180);
+                    player.rotateBy(-1);
+                } else {
+                    player.rotateBy(-1);
+                }
                 System.out.println(player.getRotation());
             }
         }, KeyCode.A);
-        input.addAction(new UserAction("Up") {
-
+        input.addAction(new UserAction("Forward") {
             @Override
             protected void onAction() {
-                double angle = player.getRotation()/100;
-                if (angle > 0){
-                    angle = angle > 0.9 ? angle + (1-angle): angle + (1-angle);
-                    System.out.println(angle);
-                    player.translateX(angle > 1 ? 1 - (angle-1): angle);
-                } else if(angle < 0) {
-                    angle = angle < -0.9 ? angle - 0.2: angle - 0.1;
-                    System.out.println(angle);
-                    player.translateX(angle < -1 ? angle + (angle+1.1): angle);
-                    angle *= -1;
+                double angle = player.getRotation()/180*2;
+                if(angle > 0){
+                    player.translateX(angle > 1 ? 1 + (1 - angle): angle);
+                    player.translateY(-1 + angle);
+                } else {
+                    player.translateX(angle < -1 ? -1 - (1 + angle): angle);
+                    player.translateY(-1 - angle);
                 }
-                player.translateY(-1+angle);
             }
         }, KeyCode.W);
-        input.addAction(new UserAction("Down") {
+        input.addAction(new UserAction("Backward") {
             @Override
             protected void onAction() {
-                player.translateY(1);
+                double angle = player.getRotation()/180*2;
+                if(angle > 0){
+                    player.translateX(angle > 1 ? -1 - (1 - angle): -angle);
+                    player.translateY(1 - angle);
+                } else {
+                    player.translateX(angle < -1 ? 1 + (1 + angle): -angle);
+                    player.translateY(1 + angle);
+                }
             }
         }, KeyCode.S);
     }
