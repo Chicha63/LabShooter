@@ -4,6 +4,7 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
+import com.almasb.fxgl.entity.GameWorld;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
 import javafx.scene.input.KeyCode;
@@ -12,6 +13,7 @@ import javafx.scene.shape.Rectangle;
 
 public class LabShooter extends GameApplication {
     private Entity player;
+    GameWorld gameWorld;
     @Override
     protected void initSettings(GameSettings gameSettings) {
         gameSettings.setWidth(600);
@@ -22,6 +24,9 @@ public class LabShooter extends GameApplication {
 
     @Override
     protected void initGame(){
+        gameWorld = FXGL.getGameWorld();
+        gameWorld.addEntityFactory(new LabEntityFactory());
+        FXGL.setLevelFromMap("map.tmx");
         player = FXGL.entityBuilder()
                 .at(300,300)
                 .view(new Rectangle(25,25, Color.BLUE))
