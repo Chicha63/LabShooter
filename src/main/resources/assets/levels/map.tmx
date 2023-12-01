@@ -30,39 +30,154 @@
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
  </layer>
- <objectgroup id="3" name="Object Layer 1">
+ <objectgroup id="3" name="Wall" class="Wall">
   <properties>
    <property name="Type" value="Wall"/>
   </properties>
-  <object id="6" x="-0.657895" y="-0.657895" width="480.921" height="16.4474"/>
-  <object id="7" x="463.816" y="15.1316" width="15.7895" height="304.605"/>
-  <object id="8" x="-0.657895" y="305.263" width="465.132" height="14.4737"/>
-  <object id="9" x="0" y="15.7895" width="15.7895" height="287.5"/>
-  <object id="10" x="15.1316" y="48.0263" width="80.9211" height="15.7895"/>
-  <object id="11" x="80.2632" y="64.4737" width="15.7895" height="47.3684"/>
-  <object id="12" x="48.0263" y="95.3947" width="32.8947" height="16.4474"/>
-  <object id="13" x="128.289" y="15.7895" width="16.4474" height="96.0526"/>
-  <object id="14" x="176.316" y="47.3684" width="15.1316" height="112.5"/>
-  <object id="15" x="48.0263" y="143.421" width="128.289" height="16.4474"/>
-  <object id="16" x="223.684" y="47.3684" width="16.4474" height="161.184"/>
-  <object id="17" x="271.711" y="47.3684" width="16.4474" height="80.9211"/>
-  <object id="18" x="287.5" y="96.7105" width="64.4737" height="31.5789"/>
-  <object id="19" x="319.737" y="14.4737" width="15.7895" height="50"/>
-  <object id="20" x="367.105" y="46.7105" width="96.7105" height="17.7632"/>
-  <object id="21" x="431.579" y="95.3947" width="31.5789" height="32.8947"/>
-  <object id="22" x="432.237" y="159.868" width="32.2368" height="17.1053"/>
-  <object id="23" x="431.579" y="207.237" width="31.5789" height="16.4474"/>
-  <object id="24" x="430.921" y="255.263" width="32.8947" height="17.1053"/>
-  <object id="25" x="383.553" y="95.3947" width="17.1053" height="175.658"/>
-  <object id="26" x="271.711" y="159.211" width="17.1053" height="48.6842"/>
-  <object id="27" x="288.158" y="192.105" width="63.8158" height="32.2368"/>
-  <object id="28" x="287.5" y="223.684" width="15.7895" height="48.0263"/>
-  <object id="29" x="303.289" y="255.921" width="48.6842" height="16.4474"/>
-  <object id="30" x="239.474" y="239.474" width="15.1316" height="65.7895"/>
-  <object id="31" x="191.447" y="239.474" width="16.4474" height="65.7895"/>
-  <object id="32" x="95.3947" y="240.132" width="64.4737" height="31.5789"/>
-  <object id="33" x="47.3684" y="191.447" width="16.4474" height="80.9211"/>
-  <object id="34" x="95.3947" y="191.447" width="96.7105" height="17.1053"/>
-  <object id="36" x="173" y="382"/>
+  <object id="6" name="Wall" type="Wall" x="-0.657895" y="-0.657895" width="480.921" height="16.4474">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="7" name="Wall" type="Wall" x="463.816" y="15.1316" width="15.7895" height="304.605">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="8" name="Wall" type="Wall" x="-0.657895" y="305.263" width="465.132" height="14.4737">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="9" name="Wall" type="Wall" x="0" y="15.7895" width="15.7895" height="287.5">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="10" name="Wall" type="Wall" x="15.1316" y="48.0263" width="80.9211" height="15.7895">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="11" name="Wall" type="Wall" x="80.2632" y="64.4737" width="15.7895" height="47.3684">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="12" name="Wall" type="Wall" x="48.0263" y="95.3947" width="32.8947" height="16.4474">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="13" name="Wall" type="Wall" x="128.289" y="15.7895" width="16.4474" height="96.0526">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="14" name="Wall" type="Wall" x="176.316" y="47.3684" width="15.1316" height="112.5">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="15" name="Wall" type="Wall" x="48.0263" y="143.421" width="128.289" height="16.4474">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="16" name="Wall" type="Wall" x="223.684" y="47.3684" width="16.4474" height="161.184">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="17" name="Wall" type="Wall" x="271.711" y="47.3684" width="16.4474" height="80.9211">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="18" name="Wall" type="Wall" x="287.5" y="96.7105" width="64.4737" height="31.5789">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="19" name="Wall" type="Wall" x="319.737" y="14.4737" width="15.7895" height="50">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="20" name="Wall" type="Wall" x="367.105" y="46.7105" width="96.7105" height="17.7632">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="21" name="Wall" type="Wall" x="431.579" y="95.3947" width="31.5789" height="32.8947">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="22" name="Wall" type="Wall" x="432.237" y="159.868" width="32.2368" height="17.1053">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="23" name="Wall" type="Wall" x="431.579" y="207.237" width="31.5789" height="16.4474">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="24" name="Wall" type="Wall" x="430.921" y="255.263" width="32.8947" height="17.1053">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="25" name="Wall" type="Wall" x="383.553" y="95.3947" width="17.1053" height="175.658">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="26" name="Wall" type="Wall" x="271.711" y="159.211" width="17.1053" height="48.6842">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="27" name="Wall" type="Wall" x="288.158" y="192.105" width="63.8158" height="32.2368">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="28" name="Wall" type="Wall" x="287.5" y="223.684" width="15.7895" height="48.0263">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="29" name="Wall" type="Wall" x="303.289" y="255.921" width="48.6842" height="16.4474">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="30" name="Wall" type="Wall" x="239.474" y="239.474" width="15.1316" height="65.7895">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="31" name="Wall" type="Wall" x="191.447" y="239.474" width="16.4474" height="65.7895">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="32" name="Wall" type="Wall" x="95.3947" y="240.132" width="64.4737" height="31.5789">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="33" name="Wall" type="Wall" x="47.3684" y="191.447" width="16.4474" height="80.9211">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="34" name="Wall" type="Wall" x="95.3947" y="191.447" width="96.7105" height="17.1053">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
