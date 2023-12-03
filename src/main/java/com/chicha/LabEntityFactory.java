@@ -22,13 +22,13 @@ public class LabEntityFactory implements EntityFactory {
     }
 
     @Spawns("Wall")
-    public Entity wall(SpawnData data){
+    public Entity newWall(SpawnData data){
         return FXGL.entityBuilder()
                 .type(EntityTypes.WALL)
-                .viewWithBBox(new Rectangle(data.<Integer>get("width"), data.<Integer>get("height")))
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"),data.<Integer>get("height"))))
                 .with(new CollidableComponent(true))
                 .with(new PhysicsComponent())
-                .buildAndAttach();
+                .build();
     }
 
 

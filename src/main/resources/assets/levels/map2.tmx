@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="7">
+ <tileset firstgid="1" name="Embed tilest" tilewidth="16" tileheight="16" tilecount="1" columns="1">
+  <image source="blacktile.png" width="16" height="16"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="Wall" class="Wall">
+  <properties>
+   <property name="Type" value="Wall"/>
+  </properties>
+  <object id="1" name="Wall" type="Wall" x="0" y="0" width="160" height="16">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="2" name="Wall" type="Wall" x="144" y="16" width="16" height="144">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="3" name="Wall" type="Wall" x="0" y="144" width="144" height="16">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+  <object id="4" name="Wall" type="Wall" x="0" y="16" width="16" height="128">
+   <properties>
+    <property name="Type" value="Wall"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
