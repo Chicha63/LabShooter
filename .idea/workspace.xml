@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f58a4277-2ae5-4f5a-9c38-8133154c1298" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chicha/EntityTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chicha/LivingEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chicha/LabEntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chicha/LabEntityFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chicha/LabShooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chicha/LabShooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/map.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/levels/map.tmx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,16 +68,5 @@
       <updated>1701179607716</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/chicha/LabShooter.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
