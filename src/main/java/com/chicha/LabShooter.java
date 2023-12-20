@@ -28,8 +28,8 @@ public class LabShooter extends GameApplication {
     GameWorld gameWorld;
     @Override
     protected void initSettings(GameSettings gameSettings) {
-        gameSettings.setWidth(600);
-        gameSettings.setHeight(600);
+        gameSettings.setWidth(480);
+        gameSettings.setHeight(320);
         gameSettings.setTitle("Labyrinth shooter");
         gameSettings.setVersion("0.1");
     }
